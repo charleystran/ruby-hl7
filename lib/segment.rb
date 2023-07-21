@@ -25,6 +25,8 @@ class HL7::Message::Segment
   attr_reader :element_delim
   attr_reader :item_delim
   attr_reader :segment_weight
+  attr_reader :elements
+
 
   METHOD_MISSING_FOR_INITIALIZER = <<-END
     def method_missing( sym, *args, &blk )

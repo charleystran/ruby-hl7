@@ -38,6 +38,9 @@ class HL7::Message
   attr_reader :item_delim
   attr_reader :segment_delim
   attr_reader :delimiter
+  attr_reader :segments
+  attr_reader :segments_by_name
+
 
   # setup a new hl7 message
   # raw_msg:: is an optional object containing an hl7 message
